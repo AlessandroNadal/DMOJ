@@ -6,13 +6,13 @@ class Author {
     String photoURL;
 }
 
-class PostSream {
+class Post {
     Author author;
     String content;
 }
 
 class Stream {
-    PostSream[] posts;
+    Post[] posts;
 }
 
 public class PostsStream {
@@ -24,11 +24,13 @@ public class PostsStream {
 
         Stream stream = new Stream();
 
-        stream.posts = new PostSream[nPosts];
+        stream.posts = new Post[nPosts];
 
         for (int i = 0; i < nPosts; i++) {
 
-            // escriu aqui el codi
+            Post post = new Post();
+            stream.posts[i] = post;
+            post.author = new Author();
 
             stream.posts[i].author.name = scanner.next();
             stream.posts[i].author.photoURL = scanner.next();

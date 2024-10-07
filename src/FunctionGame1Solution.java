@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class FunctionGame {
+class FunctionGame1 {
     public int function1(int param) {
         return param + 1;
     }
@@ -34,57 +34,57 @@ class FunctionGame {
     }
 }
 
-public class FunctionGameSolution {
+public class FunctionGame1Solution {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        FunctionGame functionGame = new FunctionGame();
+        FunctionGame1 functionGame1 = new FunctionGame1();
 
         String functionName = scanner.next();
 
         if ("function1".equals(functionName)) {
             for (int i = 5; i-- > 0; ) {
                 int param = scanner.nextInt();
-                int returnValue = functionGame.function1(param);
+                int returnValue = functionGame1.function1(param);
                 System.out.println(param + " -> " + returnValue);
             }
         } else if ("function2".equals(functionName)) {
             for (int i = 5; i-- > 0; ) {
                 int param = scanner.nextInt();
-                int returnValue = functionGame.function2(param);
+                int returnValue = functionGame1.function2(param);
                 System.out.println(param + " -> " + returnValue);
             }
         } else if ("function3".equals(functionName)) {
             for (int i = 5; i-- > 0; ) {
                 int param = scanner.nextInt();
-                int returnValue = functionGame.function3(param);
+                int returnValue = functionGame1.function3(param);
                 System.out.println(param + " -> " + returnValue);
             }
         } else if ("function4".equals(functionName)) {
             for (int i = 5; i-- > 0; ) {
                 int param = scanner.nextInt();
-                int returnValue = functionGame.function4(param);
+                int returnValue = functionGame1.function4(param);
                 System.out.println(param + " -> " + returnValue);
             }
         } else if ("function5".equals(functionName)) {
             for (int i = 5; i-- > 0; ) {
                 int param = scanner.nextInt();
-                int returnValue = functionGame.function5(param);
+                int returnValue = functionGame1.function5(param);
                 System.out.println(param + " -> " + returnValue);
             }
         } else if ("function6".equals(functionName)) {
             for (int i = 5; i-- > 0; ) {
                 int param1 = scanner.nextInt();
                 int param2 = scanner.nextInt();
-                int returnValue = functionGame.function6(param1, param2);
+                int returnValue = functionGame1.function6(param1, param2);
                 System.out.println(param1 + "," + param2 + " -> " + returnValue);
             }
         } else if ("function7".equals(functionName)) {
             for (int i = 7; i-- > 0; ) {
                 int param1 = scanner.nextInt();
                 int param2 = scanner.nextInt();
-                int returnValue = functionGame.function7(param1, param2);
+                int returnValue = functionGame1.function7(param1, param2);
                 System.out.println(param1 + "," + param2 + " -> " + returnValue);
             }
         } else if ("function8".equals(functionName)) {
@@ -92,7 +92,7 @@ public class FunctionGameSolution {
                 int param1 = scanner.nextInt();
                 int param2 = scanner.nextInt();
                 int param3 = scanner.nextInt();
-                int returnValue = functionGame.function8(param1, param2, param3);
+                int returnValue = functionGame1.function8(param1, param2, param3);
                 System.out.println(param1 + "," + param2 + "," + param3 + " -> " + returnValue);
             }
         }

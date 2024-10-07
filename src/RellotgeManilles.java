@@ -14,10 +14,9 @@ public class RellotgeManilles {
 
         minutesDegrees += secondsDegrees / 360 * 6;
         hoursDegrees += minutesDegrees / 360 * 30;
+
         System.out.println(hoursDegrees);
         System.out.println(minutesDegrees);
         System.out.println(secondsDegrees);
-
-
     }
 }

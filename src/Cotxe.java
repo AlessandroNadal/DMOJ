@@ -1,8 +1,7 @@
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Locale;
+import java.util.Scanner;
 
 
 class Car {
@@ -12,10 +11,13 @@ class Car {
     float braking;
     float cornering;
 
-    public Car(String model, int i, float v, float v1, float v2) {
+    Car(String model, int topSpeed, float acceleration, float braking, float cornering) {
+        this.model = model;
+        this.topSpeed = topSpeed;
+        this.acceleration = acceleration;
+        this.braking = braking;
+        this.cornering = cornering;
     }
-
-    // escriu el codi aqui
 }
 
 public class Cotxe {
