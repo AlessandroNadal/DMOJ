@@ -5,10 +5,7 @@ public class StigidSerT {
         Scanner scanner = new Scanner(System.in);
 
         String number = scanner.next();
-        String reversed = "";
-        for (int i = number.length()-1; i >= 0; i--) {
-            reversed += number.charAt(i);
-        }
-        System.out.println(Integer.valueOf(reversed));
+        String newNumber = String.valueOf(number.charAt(2)) + number.charAt(1) + number.charAt(0);
+        System.out.println(Integer.valueOf(newNumber));
     }
 }
