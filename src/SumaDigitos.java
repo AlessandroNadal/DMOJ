@@ -1,13 +1,15 @@
 import java.util.Scanner;
 
-public class NomesUnNombreSenar {
+public class SumaDigitos {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
         int n = 0;
-        for (int i = 0; i < 3; i++) {
-            if (scanner.nextInt() % 2 == 1) n++;
+        String s = scanner.next();
+        for (char c : s.toCharArray()) {
+            n += c - 48;
         }
 
-        System.out.println(n == 1);
+        System.out.println(n);
     }
 }

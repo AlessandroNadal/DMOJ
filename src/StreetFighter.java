@@ -15,8 +15,12 @@ public class StreetFighter {
                         case "JOYSTICK_LEFT/RIGHT" -> "WALKING";
                         default -> "IDLE";
                     };
-                    case "PUNCHING", "KICKING" -> switch (event) {
-                        case "PUNCH_END", "KICK_END" -> "IDLE";
+                    case "PUNCHING" -> switch(event) {
+                        case "PUNCH_END" -> "IDLE";
+                        default -> state;
+                    };
+                    case "KICKING" -> switch (event) {
+                        case "KICK_END" -> "IDLE";
                         default -> state;
                     };
                     case "JUMPING" -> switch (event) {
@@ -32,7 +36,7 @@ public class StreetFighter {
                         case "JOYSTICK_UP" -> "JUMPING";
                         default -> "WALKING";
                     };
-                    default -> "";
+                    default -> state;
                 });
     }
 }
